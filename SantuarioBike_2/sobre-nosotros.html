@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuestra Historia - Santuario Bike</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 6h15M4.5 12h15M4.5 18h15" />
+                </svg>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="bicicletas.html">Bicicletas</a></li>
+                <li><a href="accesorios.html">Accesorios</a></li>
+                <li><a href="sobre-nosotros.html">Nuestra Historia</a></li>
+                <li><a href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="our-history">
+            <h1>Nuestra Historia</h1>
+            <p>Desde nuestros humildes comienzos en Yopal, Casanare, Santuario Bike ha crecido para convertirse en una de las tiendas de bicicletas más confiables y queridas por ciclistas apasionados. Fundada con el amor por la aventura sobre ruedas, siempre hemos creído que una bicicleta es mucho más que un medio de transporte: es un estilo de vida.</p>
+
+            <div class="history-content">
+                <div class="text-section">
+                    <h2>La Pasión por las Bicicletas</h2>
+                    <p>Nuestro viaje comenzó en un pequeño taller, reparando bicicletas de amigos y vecinos. Con el tiempo, nuestra pasión por las bicicletas y el ciclismo creció, lo que nos llevó a expandir nuestros horizontes y abrir nuestra primera tienda. Santuario Bike ha sido testigo de cómo el ciclismo ha unido a la comunidad, creando recuerdos inolvidables para nuestros clientes.</p>
+                </div>
+
+                <div class="image-section">
+                    <img src="images/inicio-tienda.jpg" alt="Imagen de la tienda Santuario Bike" class="hover-img">
+                    <p>Nuestra primera tienda en Yopal, donde todo comenzó.</p>
+                </div>
+            </div>
+
+            <div class="history-content reverse">
+                <div class="image-section">
+                    <img src="images/eventos-comunidad.jpg" alt="Eventos de ciclismo en la comunidad" class="hover-img">
+                    <p>Participamos activamente en eventos de ciclismo en la región.</p>
+                </div>
+
+                <div class="text-section">
+                    <h2>Compromiso con la Comunidad</h2>
+                    <p>En Santuario Bike, creemos en el poder del ciclismo para conectar a las personas y mejorar su calidad de vida. A lo largo de los años, hemos colaborado con la comunidad organizando eventos, carreras y paseos en bicicleta. Nuestro compromiso es fomentar el ciclismo como una opción saludable, ecológica y divertida.</p>
+                </div>
+            </div>
+
+            <div class="video-section">
+                <h2>Mira nuestro viaje</h2>
+                <video controls>
+                    <source src="videos/nuestra-historia.mp4" type="video/mp4">
+                    Tu navegador no soporta la reproducción de videos.
+                </video>
+                <p>Conoce cómo hemos crecido y evolucionado a lo largo de los años.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Email: <a href="mailto:marinojimmy@gmail.com">info@santuariobike.com</a></p>
+        <p>Teléfono: <a href="tel:+573114670076">311 467 0076</a></p>
+        <p>© 2024 Santuario Bike. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>

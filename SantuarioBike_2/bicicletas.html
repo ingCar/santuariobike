@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bicicletas - Santuario Bike</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-toggle" id="menu-toggle">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M4.5 6h15M4.5 12h15M4.5 18h15" />
+                </svg>
+            </div>
+            <ul class="nav-links" id="nav-links">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="bicicletas.html">Bicicletas</a></li>
+                <li><a href="accesorios.html">Accesorios</a></li>
+                <li><a href="sobre-nosotros.html">Nuestra Historia</a></li>
+                <li><a href="contacto.html">Contáctanos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="bicicletas" class="accessories-section">
+            <h1>Bicicletas</h1>
+            <p>Ofrecemos una variedad de bicicletas para todos los gustos y necesidades. Desde bicicletas de montaña hasta urbanas, encuentra la que mejor se adapte a tu estilo de vida.</p>
+
+            <div class="accessories-grid">
+                <!-- Bicicleta 1 -->
+                <div class="accessory-item">
+                    <img src="images/bicicleta1.jpg" alt="Bicicleta de montaña">
+                    <h3>Bicicleta de montaña</h3>
+                    <p>Precio: $10.000.000</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+
+                <!-- Bicicleta 2 -->
+                <div class="accessory-item">
+                    <img src="images/bicicleta2.jpg" alt="Bicicleta urbana">
+                    <h3>Bicicleta urbana</h3>
+                    <p>Precio: $8.000.000</p>
+                    <button class="buy-button">Comprar</button>
+                </div>
+                <!-- Agregar más bicicletas según sea necesario -->
+            </div>
+        </section>
+    </main>
+
+    <!-- Botón Fijo de WhatsApp -->
+    <a href="https://wa.me/3114670076" class="whatsapp-fijo" target="_blank">
+        <img src="images/whatsApp.jpg" alt="WhatsApp">
+    </a>
+
+    <footer>
+        <p>Contacto: <a href="mailto:marinojimmy@gmail.com">info@santuariobike.com</a></p>
+        <p>Teléfono: <a href="tel:+573114670076">311 467 0076</a></p>
+        <p>© 2024 Santuario Bike. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const navLinks = document.getElementById('nav-links');
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
+
